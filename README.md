@@ -1,5 +1,5 @@
 # Spring-Boot-Crud-Rest
-Example Restful Api - Spring Boot
+Example RESTful web service with Spring Boot
 
 ## What is a RESTful API?
 
@@ -7,5 +7,7 @@ Example Restful Api - Spring Boot
 
 - RESTful is typically used to refer to web services implementing such an architecture.
 
+### Running Spring Boot with IntelliJ
 
+![Screenshot](/prtsc/RESTful-API-1.png)
 
