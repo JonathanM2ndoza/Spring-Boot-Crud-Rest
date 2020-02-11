@@ -1,7 +1,8 @@
 # Spring-Boot-Crud-Rest
+
 Example RESTful web service with Spring Boot
 
-## What is a RESTful API?
+## REST and RESTful
 
 - Representational state transfer (REST) is a style of software architecture. As described in a dissertation by Roy Fielding, REST is an "architectural style" that basically exploits the existing technology and protocols of the Web.
 
@@ -26,6 +27,20 @@ Example RESTful web service with Spring Boot
 ![Screenshot](/prtsc/RESTful-API-4.png)
 
 ![Screenshot](/prtsc/RESTful-API-4.1.png)
+
+### Request (GET) /api/v1/users/ for find all users with Postman
+
+![Screenshot](/prtsc/RESTful-API-5.png)
+
+![Screenshot](/prtsc/RESTful-API-5.1.png)
+
+### Request (DELETE) /api/v1/users/id for delete with Postman
+
+![Screenshot](/prtsc/RESTful-API-6.png)
+
+![Screenshot](/prtsc/RESTful-API-6.1.png)
+
+![Screenshot](/prtsc/RESTful-API-6.2.png)
 
 
 
