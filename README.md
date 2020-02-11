@@ -11,3 +11,29 @@ Example RESTful web service with Spring Boot
 
 ![Screenshot](/prtsc/RESTful-API-1.png)
 
+### Request (POST) /api/v1/users for Create User with Postman
+
+![Screenshot](/prtsc/RESTful-API-2.png)
+
+![Screenshot](/prtsc/RESTful-API-2.1.png)
+
+### Request (GET) /api/v1/users/id for find with Postman
+
+![Screenshot](/prtsc/RESTful-API-3.png)
+
+### Request (PUT) /api/v1/users/id for update with Postman
+
+![Screenshot](/prtsc/RESTful-API-4.png)
+
+![Screenshot](/prtsc/RESTful-API-4.1.png)
+
+
+
+
+
+
+
+
+
+
+
