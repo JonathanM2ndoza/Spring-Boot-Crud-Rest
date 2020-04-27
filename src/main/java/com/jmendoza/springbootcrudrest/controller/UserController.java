@@ -51,9 +51,9 @@ public class UserController {
     }
 
     @DeleteMapping("/users/{id}")
-    public Map<String, Boolean> deleteUser(
+    public ResponseEntity deleteUser(
             @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
-
-        return userService.deleteUser(userId);
+        userService.deleteUser(userId);
+        return ResponseEntity.noContent().build();
     }
 }

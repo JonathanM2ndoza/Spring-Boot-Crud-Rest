@@ -43,13 +43,9 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public Map<String, Boolean> deleteUser(Long userId) throws ResourceNotFoundException {
+    public void deleteUser(Long userId) throws ResourceNotFoundException {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found :: " + userId));
-
         userRepository.delete(user);
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("deleted", Boolean.TRUE);
-        return response;
     }
 }
