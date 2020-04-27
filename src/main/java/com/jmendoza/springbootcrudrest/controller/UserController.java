@@ -2,15 +2,12 @@ package com.jmendoza.springbootcrudrest.controller;
 
 import com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException;
 import com.jmendoza.springbootcrudrest.model.User;
-import com.jmendoza.springbootcrudrest.repository.UserRepository;
 import com.jmendoza.springbootcrudrest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -49,8 +46,6 @@ public class UserController {
     @DeleteMapping("/users/{id}")
     public Map<String, Boolean> deleteUser(
             @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
-        Map<String, Boolean> response = new HashMap<>();
-        response = userService.deleteUser(userId);
-        return response;
+        return userService.deleteUser(userId);
     }
 }

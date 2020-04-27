@@ -1,14 +1,12 @@
 package com.jmendoza.springbootcrudrest.service;
 
+import com.jmendoza.springbootcrudrest.constants.UserConstanst;
 import com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException;
 import com.jmendoza.springbootcrudrest.model.User;
 import com.jmendoza.springbootcrudrest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -25,9 +23,8 @@ public class UserService {
     }
 
     public User getUserById(Long userId) throws ResourceNotFoundException {
-        User user = userRepository.findById(userId)
-                .orElseThrow(() -> new ResourceNotFoundException("User not found :: " + userId));
-        return user;
+        return userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.USER_NOT_FOUND + userId));
     }
 
     public User createUser(User user) {
@@ -43,8 +40,7 @@ public class UserService {
         user.setFirstName(userDetails.getFirstName());
         user.setUpdatedAt(new Date());
         user.setUpdatedby(userDetails.getUpdatedby());
-        final User updatedUser = userRepository.save(user);
-        return updatedUser;
+        return userRepository.save(user);
     }
 
     public Map<String, Boolean> deleteUser(Long userId) throws ResourceNotFoundException {
