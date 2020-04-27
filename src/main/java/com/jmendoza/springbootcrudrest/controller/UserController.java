@@ -4,10 +4,12 @@ import com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException;
 import com.jmendoza.springbootcrudrest.model.User;
 import com.jmendoza.springbootcrudrest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.net.URI;
 import java.util.List;
 import java.util.Map;
 
@@ -19,8 +21,12 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/users")
-    public List<User> getAllUsers() {
-        return userService.getAllUsers();
+    public ResponseEntity<List<User>> getAllUsers() {
+        List<User> userList = userService.getAllUsers();
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Responded", "UserController");
+        return ResponseEntity.ok().headers(headers).body(userList);
     }
 
     @GetMapping("/users/{id}")
@@ -31,8 +37,9 @@ public class UserController {
     }
 
     @PostMapping("/users")
-    public User createUser(@Valid @RequestBody User user) {
-        return userService.createUser(user);
+    public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
+        User userCreated = userService.createUser(user);
+        return ResponseEntity.created(URI.create("/users/" + userCreated.getId())).body(userCreated);
     }
 
     @PutMapping("/users/{id}")
@@ -46,6 +53,7 @@ public class UserController {
     @DeleteMapping("/users/{id}")
     public Map<String, Boolean> deleteUser(
             @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
+
         return userService.deleteUser(userId);
     }
 }

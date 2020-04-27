@@ -73,3 +73,210 @@
 2020-04-27 12:42:22 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2020-04-27 12:42:22 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@74308ad9, com.jmendoza.springbootcrudrest.model.User@25a7189a, com.jmendoza.springbootcrudrest.model.User@c1fe775]]
 2020-04-27 12:42:22 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:21:16 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 13:21:16 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2139 ms
+2020-04-27 13:21:17 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 13:21:17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 13:21:17 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 13:21:17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 13:21:17 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 13:21:17 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 13:24:20 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 13:24:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 13:24:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 13:24:20 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2020-04-27 13:24:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 13:24:20 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 13:24:21 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:24:21 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@53f632ab, com.jmendoza.springbootcrudrest.model.User@7bec8802, com.jmendoza.springbootcrudrest.model.User@2c473a60]]
+2020-04-27 13:24:21 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:28:35 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 13:28:35 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 13:28:35 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:28:35 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@7d64c678, com.jmendoza.springbootcrudrest.model.User@3e9a5090, com.jmendoza.springbootcrudrest.model.User@4c53b8d4]]
+2020-04-27 13:28:35 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:28:50 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/v1/users", parameters={}
+2020-04-27 13:28:50 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public com.jmendoza.springbootcrudrest.model.User com.jmendoza.springbootcrudrest.controller.UserController.createUser(com.jmendoza.springbootcrudrest.model.User)
+2020-04-27 13:28:51 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.jmendoza.springbootcrudrest.model.User@53378571]
+2020-04-27 13:28:51 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:28:51 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@53378571]
+2020-04-27 13:28:51 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:29:14 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 13:29:14 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 13:29:14 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:29:14 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@10aa7937, com.jmendoza.springbootcrudrest.model.User@4b15b992, com.jmendoza.springbootcrudrest.model.User@21f0acef, com.jmendoza.springbootcrudrest.model.User@33a532fa]]
+2020-04-27 13:29:14 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:29:21 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/5", parameters={}
+2020-04-27 13:29:21 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:29:21 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:29:21 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@1ba56d42]
+2020-04-27 13:29:21 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:29:25 [http-nio-8083-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/6", parameters={}
+2020-04-27 13:29:25 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:29:25 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 13:29:25 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:29:25 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@337cd723]
+2020-04-27 13:29:25 [http-nio-8083-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 6]
+2020-04-27 13:29:25 [http-nio-8083-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 13:29:32 [http-nio-8083-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/1", parameters={}
+2020-04-27 13:29:32 [http-nio-8083-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:29:32 [http-nio-8083-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:29:32 [http-nio-8083-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@404bf401]
+2020-04-27 13:29:32 [http-nio-8083-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:35:28 [http-nio-8083-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 13:35:28 [http-nio-8083-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 13:35:28 [http-nio-8083-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:35:28 [http-nio-8083-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@55d959ed, com.jmendoza.springbootcrudrest.model.User@2d80d8ac, com.jmendoza.springbootcrudrest.model.User@67f68c1, com.jmendoza.springbootcrudrest.model.User@1dea0a72]]
+2020-04-27 13:35:28 [http-nio-8083-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:38:02 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - PUT "/api/v1/users/5", parameters={}
+2020-04-27 13:38:02 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.updateUser(java.lang.Long,com.jmendoza.springbootcrudrest.model.User) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:38:02 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.jmendoza.springbootcrudrest.model.User@74241933]
+2020-04-27 13:38:02 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:38:02 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@3b993a46]
+2020-04-27 13:38:02 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:38:07 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 13:38:07 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 13:38:07 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:38:07 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@5d43d8d3, com.jmendoza.springbootcrudrest.model.User@1905c0cd, com.jmendoza.springbootcrudrest.model.User@27244827, com.jmendoza.springbootcrudrest.model.User@6cab57a9]]
+2020-04-27 13:38:07 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:38:19 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/v1/users/4", parameters={}
+2020-04-27 13:38:19 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Boolean> com.jmendoza.springbootcrudrest.controller.UserController.deleteUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:38:19 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 13:38:19 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:38:19 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@6bed0076]
+2020-04-27 13:38:19 [http-nio-8083-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 4]
+2020-04-27 13:38:19 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 13:40:39 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/v1/users/5", parameters={}
+2020-04-27 13:40:39 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Boolean> com.jmendoza.springbootcrudrest.controller.UserController.deleteUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:40:40 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:40:40 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{deleted=true}]
+2020-04-27 13:40:40 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 13:40:44 [http-nio-8083-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/api/v1/users/5", parameters={}
+2020-04-27 13:40:44 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Boolean> com.jmendoza.springbootcrudrest.controller.UserController.deleteUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 13:40:44 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 13:40:44 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 13:40:44 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@52e77565]
+2020-04-27 13:40:44 [http-nio-8083-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 5]
+2020-04-27 13:40:44 [http-nio-8083-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 14:12:47 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 14:12:47 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2116 ms
+2020-04-27 14:12:49 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 14:12:49 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 14:12:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 14:12:49 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 14:12:49 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 14:12:49 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 14:19:33 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 14:19:33 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 14:19:33 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 14:19:33 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-04-27 14:19:33 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:19:33 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:19:33 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:19:33 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@51edec6f, com.jmendoza.springbootcrudrest.model.User@6d1e0fd8, com.jmendoza.springbootcrudrest.model.User@205fa44]]
+2020-04-27 14:19:34 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:35:00 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:35:00 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.List<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:35:00 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:35:00 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@c22efbe, com.jmendoza.springbootcrudrest.model.User@fe5d9d7, com.jmendoza.springbootcrudrest.model.User@3de42663]]
+2020-04-27 14:35:00 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:37:56 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 14:37:56 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2542 ms
+2020-04-27 14:37:57 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 14:37:57 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 14:37:57 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 14:37:58 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 14:37:58 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 14:37:58 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 14:38:10 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 14:38:10 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@2dbc5de5, com.jmendoza.springbootcrudrest.model.User@18bdc697, com.jmendoza.springbootcrudrest.model.User@3dd8d7b7]]
+2020-04-27 14:38:10 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 202 ACCEPTED
+2020-04-27 14:41:27 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 14:41:27 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2187 ms
+2020-04-27 14:41:29 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 14:41:29 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 14:41:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 14:41:29 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 14:41:29 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 14:41:29 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 14:41:41 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 14:41:41 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@445cdef1, com.jmendoza.springbootcrudrest.model.User@2dc0e6a2, com.jmendoza.springbootcrudrest.model.User@18603dd0]]
+2020-04-27 14:41:41 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 202 ACCEPTED
+2020-04-27 14:41:51 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/6", parameters={}
+2020-04-27 14:41:51 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 14:41:51 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 14:41:51 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:41:51 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@4ac0743d]
+2020-04-27 14:41:51 [http-nio-8083-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 6]
+2020-04-27 14:41:51 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 14:42:18 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/1", parameters={}
+2020-04-27 14:42:18 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 14:42:18 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:42:18 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@4360389b]
+2020-04-27 14:42:18 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:43:37 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 14:43:37 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2312 ms
+2020-04-27 14:43:38 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 14:43:38 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 14:43:38 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 14:43:38 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 14:43:39 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 14:43:39 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 14:43:50 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 14:43:50 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@595a7f59, com.jmendoza.springbootcrudrest.model.User@24082373, com.jmendoza.springbootcrudrest.model.User@6784adb4]]
+2020-04-27 14:43:50 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:43:56 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:43:56 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:43:56 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:43:56 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@15c4987f, com.jmendoza.springbootcrudrest.model.User@3c68704b, com.jmendoza.springbootcrudrest.model.User@241bae30]]
+2020-04-27 14:43:56 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:44:32 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 14:44:32 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getAllUsers()
+2020-04-27 14:44:32 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:44:32 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@305902a0, com.jmendoza.springbootcrudrest.model.User@50527eb5, com.jmendoza.springbootcrudrest.model.User@1a394f4]]
+2020-04-27 14:44:32 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:44:36 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/1", parameters={}
+2020-04-27 14:44:36 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 14:44:36 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:44:36 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@5bb2691b]
+2020-04-27 14:44:36 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 14:44:41 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/7", parameters={}
+2020-04-27 14:44:41 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 14:44:41 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 14:44:41 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:44:41 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@3693bd0f]
+2020-04-27 14:44:41 [http-nio-8083-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 7]
+2020-04-27 14:44:41 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 14:44:49 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/7", parameters={}
+2020-04-27 14:44:49 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserById(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 14:44:49 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 14:44:49 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 14:44:49 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@68dac4e1]
+2020-04-27 14:44:49 [http-nio-8083-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 7]
+2020-04-27 14:44:49 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 14:51:27 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 14:51:27 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2466 ms
+2020-04-27 14:51:29 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 14:51:29 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 14:51:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 14:51:29 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 14:51:30 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 14:51:30 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
