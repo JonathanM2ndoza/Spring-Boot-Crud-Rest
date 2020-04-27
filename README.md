@@ -1,6 +1,6 @@
 # Spring-Boot-Crud-Rest
 
-Example RESTful web service with Spring Boot
+Example of RESTful API with Spring Boot. Basic logging, JPA, MySQL  
 
 ## REST and RESTful
 
