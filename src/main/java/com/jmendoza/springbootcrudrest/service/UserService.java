@@ -16,11 +16,11 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public List<User> getAllUsers() {
+    public List<User> getUsers() {
         return userRepository.findAll();
     }
 
-    public User getUserById(Long userId) throws ResourceNotFoundException {
+    public User getUser(Long userId) throws ResourceNotFoundException {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.USER_NOT_FOUND + userId));
     }
@@ -45,5 +45,10 @@ public class UserService {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found :: " + userId));
         userRepository.delete(user);
+    }
+
+    public User getUserByFirstName(String firstName) throws ResourceNotFoundException {
+        return userRepository.findByFirstName(firstName)
+                .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.USER_NOT_FOUND + firstName));
     }
 }

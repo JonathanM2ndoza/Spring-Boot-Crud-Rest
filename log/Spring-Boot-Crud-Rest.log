@@ -334,3 +334,860 @@
 2020-04-27 15:13:01 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@6cc0e4b5]
 2020-04-27 15:13:01 [http-nio-8083-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 5]
 2020-04-27 15:13:01 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 17:52:47 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 17:52:47 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3422 ms
+2020-04-27 17:52:49 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 17:52:49 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 17:52:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 17:52:49 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 17:52:49 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 17:52:49 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 17:53:25 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 17:53:25 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 17:53:25 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 17:53:25 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2020-04-27 17:53:25 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 17:53:25 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 17:53:25 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 17:53:25 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@3d78144f, com.jmendoza.springbootcrudrest.model.User@7ac66116, com.jmendoza.springbootcrudrest.model.User@42d0e7c0]]
+2020-04-27 17:53:26 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 17:53:29 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/7", parameters={}
+2020-04-27 17:53:29 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 17:53:29 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 17:53:29 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 17:53:29 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@2527004e]
+2020-04-27 17:53:29 [http-nio-8083-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: 7]
+2020-04-27 17:53:29 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 17:53:33 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/1", parameters={}
+2020-04-27 17:53:33 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 17:53:33 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 17:53:33 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@1a331996]
+2020-04-27 17:53:33 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:16:59 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 18:16:59 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2244 ms
+2020-04-27 18:17:01 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 18:17:01 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 18:17:01 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 18:17:01 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 18:17:01 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 18:17:01 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 18:17:17 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 18:17:17 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@6aff4b7b, com.jmendoza.springbootcrudrest.model.User@1a65a224, com.jmendoza.springbootcrudrest.model.User@732995db]]
+2020-04-27 18:17:17 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:17:35 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:17:35 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:17:35 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:17:35 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@549726c, com.jmendoza.springbootcrudrest.model.User@53572da3, com.jmendoza.springbootcrudrest.model.User@3406515e]]
+2020-04-27 18:17:35 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:23:13 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 18:23:13 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2786 ms
+2020-04-27 18:23:15 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 18:23:16 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 18:23:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 18:23:16 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 18:23:16 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 18:23:16 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 18:23:27 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 18:23:27 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@10ac18a3, com.jmendoza.springbootcrudrest.model.User@54006345, com.jmendoza.springbootcrudrest.model.User@4a4201f2]]
+2020-04-27 18:23:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:23:42 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:23:42 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:23:42 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:23:42 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@2fcb4fad, com.jmendoza.springbootcrudrest.model.User@42a8e313, com.jmendoza.springbootcrudrest.model.User@1eaec425]]
+2020-04-27 18:23:42 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:32:27 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 18:32:27 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3356 ms
+2020-04-27 18:32:30 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 18:32:30 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 18:32:30 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 18:32:30 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 18:32:30 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 18:32:30 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 18:32:36 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 18:32:36 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@15210a63, com.jmendoza.springbootcrudrest.model.User@366ffe73, com.jmendoza.springbootcrudrest.model.User@6de59335]]
+2020-04-27 18:32:36 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:32:50 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:32:50 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:32:50 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:32:50 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@27bea412, com.jmendoza.springbootcrudrest.model.User@6d5a4b71, com.jmendoza.springbootcrudrest.model.User@16d34215]]
+2020-04-27 18:32:50 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:39:13 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 18:39:13 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2241 ms
+2020-04-27 18:39:15 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 18:39:15 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 18:39:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 18:39:15 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+2020-04-27 18:39:15 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 18:39:15 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 18:39:20 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 18:39:20 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@64b78280, com.jmendoza.springbootcrudrest.model.User@36ac1e57, com.jmendoza.springbootcrudrest.model.User@6e4c7ef8]]
+2020-04-27 18:39:20 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 18:39:36 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/", parameters={}
+2020-04-27 18:39:36 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 18:39:36 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 18:39:36 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@56a873c6, com.jmendoza.springbootcrudrest.model.User@5b52a208, com.jmendoza.springbootcrudrest.model.User@6734620e]]
+2020-04-27 18:39:36 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 19:52:21 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 19:52:21 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2486 ms
+2020-04-27 19:52:23 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 19:52:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 19:52:23 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 19:52:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 19:52:23 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 19:52:23 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 19:52:27 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 19:52:27 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/dddf", parameters={}
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.globleExcpetionHandler(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@ac8d76f]
+2020-04-27 19:52:27 [http-nio-8083-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/users/dddf': {public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException, public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException}]
+2020-04-27 19:52:27 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2020-04-27 19:52:41 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/dddf", parameters={}
+2020-04-27 19:52:41 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.globleExcpetionHandler(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2020-04-27 19:52:41 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 19:52:41 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@50efdffd]
+2020-04-27 19:52:41 [http-nio-8083-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/users/dddf': {public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException, public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException}]
+2020-04-27 19:52:41 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2020-04-27 19:53:51 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/Angelica", parameters={}
+2020-04-27 19:53:51 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.globleExcpetionHandler(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2020-04-27 19:53:51 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 19:53:51 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@42921124]
+2020-04-27 19:53:51 [http-nio-8083-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/users/Angelica': {public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException, public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException}]
+2020-04-27 19:53:51 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2020-04-27 19:53:52 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/Angelica", parameters={}
+2020-04-27 19:53:52 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.globleExcpetionHandler(java.lang.Exception,org.springframework.web.context.request.WebRequest)
+2020-04-27 19:53:52 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 19:53:52 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@5dafacc6]
+2020-04-27 19:53:52 [http-nio-8083-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/users/Angelica': {public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUser(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException, public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException}]
+2020-04-27 19:53:52 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2020-04-27 19:57:16 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users?firstName=Angelica", parameters={masked}
+2020-04-27 19:57:16 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 19:57:16 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 19:57:16 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@76d1cc51, com.jmendoza.springbootcrudrest.model.User@3475315b, com.jmendoza.springbootcrudrest.model.User@3f57070d]]
+2020-04-27 19:57:17 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 19:59:10 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 19:59:10 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2045 ms
+2020-04-27 19:59:12 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 19:59:12 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 19:59:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 19:59:12 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+to {GET /api/v1/users}: There is already 'userController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers() mapped.
+2020-04-27 19:59:12 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+to {GET /api/v1/users}: There is already 'userController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.jmendoza.springbootcrudrest.SpringBootCrudRestApplication.main(SpringBootCrudRestApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+to {GET /api/v1/users}: There is already 'userController' bean method
+public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:621)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:589)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:315)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 21 common frames omitted
+2020-04-27 19:59:51 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 19:59:51 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2544 ms
+2020-04-27 19:59:53 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 19:59:53 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 19:59:53 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 19:59:53 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 19:59:53 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 19:59:53 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 20:00:05 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 20:00:05 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 20:00:05 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 20:00:05 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 20:00:05 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users?firstName=Angelica", parameters={masked}
+2020-04-27 20:00:05 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.User>> com.jmendoza.springbootcrudrest.controller.UserController.getUsers()
+2020-04-27 20:00:06 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 20:00:06 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.jmendoza.springbootcrudrest.model.User@43cee763, com.jmendoza.springbootcrudrest.model.User@624cf9bc, com.jmendoza.springbootcrudrest.model.User@500dc103]]
+2020-04-27 20:00:06 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 20:04:13 [restartedMain] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 20:04:13 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2437 ms
+2020-04-27 20:04:15 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 20:04:15 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 20:04:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 20:04:15 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 20:04:15 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 20:04:15 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 20:04:22 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 20:04:22 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 20:04:22 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 20:04:22 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-04-27 20:04:22 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/name/Angelica", parameters={}
+2020-04-27 20:04:22 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 20:04:23 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 20:04:23 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@700234df]
+2020-04-27 20:04:23 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 20:09:11 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/name/Angelica", parameters={}
+2020-04-27 20:09:11 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 20:09:11 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 20:09:11 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@31ba470]
+2020-04-27 20:09:11 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 20:09:21 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/name/Isabel", parameters={}
+2020-04-27 20:09:21 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 20:09:21 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 20:09:21 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@7ced2e71]
+2020-04-27 20:09:21 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 20:09:24 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/name/Isabele", parameters={}
+2020-04-27 20:09:24 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 20:09:24 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-27 20:09:24 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 20:09:24 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@5b92f396]
+2020-04-27 20:09:24 [http-nio-8083-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: User not found :: Isabele]
+2020-04-27 20:09:24 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 20:09:31 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/name/Angelica", parameters={}
+2020-04-27 20:09:31 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.User> com.jmendoza.springbootcrudrest.controller.UserController.getUserByFirstName(java.lang.String) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-27 20:09:31 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 20:09:31 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.model.User@1223cd67]
+2020-04-27 20:09:31 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 21:52:19 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:52:19 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4627 ms
+2020-04-27 21:52:22 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 21:52:23 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:52:23 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 21:52:23 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:52:23 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:52:23 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 21:52:24 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:52:24 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 163 ms
+2020-04-27 21:52:24 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:52:24 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:52:24 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:52:25 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 21:52:25 [RMI TCP Connection(5)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 21:52:25 [RMI TCP Connection(5)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 21:52:25 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/info", parameters={}
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 27 21:53:01 VET 2020, status=404, error=Not Found, message=No message available, path=/info}]
+2020-04-27 21:53:01 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:53:07 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 21:53:07 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/info", parameters={}
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:53:07 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:53:07 VET 2020, status=404, error=Not Found, message=No message available, path=/info}]
+2020-04-27 21:53:08 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/health", parameters={}
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:53:38 VET 2020, status=404, error=Not Found, message=No message available, path=/health}]
+2020-04-27 21:53:38 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/health", parameters={}
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:53:40 VET 2020, status=404, error=Not Found, message=No message available, path=/health}]
+2020-04-27 21:53:40 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:54:02 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 21:54:02 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 21:54:02 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 21:54:02 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 21:54:02 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 21:54:12 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 21:54:12 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 21:54:12 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 21:54:12 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{}]
+2020-04-27 21:54:12 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/beans", parameters={}
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:54:19 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/beans}]
+2020-04-27 21:54:19 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/beans", parameters={}
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:54:53 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/beans}]
+2020-04-27 21:54:53 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:55:03 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:55:03 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2307 ms
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:55:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 21:55:05 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:55:05 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 88 ms
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:55:05 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:55:06 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:55:06 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 21:55:06 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 21:55:06 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 21:55:06 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 21:55:12 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 21:55:12 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/beans", parameters={}
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:55:12 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:55:13 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:55:13 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:55:12 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/beans}]
+2020-04-27 21:55:13 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:55:18 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 21:55:18 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 21:55:18 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 21:55:18 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{}]
+2020-04-27 21:55:18 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/info", parameters={}
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:55:24 VET 2020, status=404, error=Not Found, message=No message available, path=/info}]
+2020-04-27 21:55:24 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:56:51 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:56:51 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2495 ms
+2020-04-27 21:56:53 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 21:56:53 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:56:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 21:56:53 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:56:53 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:56:53 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 21:56:54 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:56:54 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 114 ms
+2020-04-27 21:56:54 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:56:54 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:56:54 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:56:57 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 21:56:57 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/info", parameters={}
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:56:57 VET 2020, status=404, error=Not Found, message=No message available, path=/info}]
+2020-04-27 21:56:57 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/health", parameters={}
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:57:15 VET 2020, status=404, error=Not Found, message=No message available, path=/health}]
+2020-04-27 21:57:15 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:57:42 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:57:42 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2574 ms
+2020-04-27 21:57:44 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 21:57:44 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:57:44 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 21:57:44 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:57:44 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:57:44 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 21:57:45 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:57:45 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 94 ms
+2020-04-27 21:57:45 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:57:45 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:57:45 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:57:53 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 21:57:53 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/health", parameters={}
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:57:53 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:57:53 VET 2020, status=404, error=Not Found, message=No message available, path=/health}]
+2020-04-27 21:57:54 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/info", parameters={}
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:58:10 VET 2020, status=404, error=Not Found, message=No message available, path=/info}]
+2020-04-27 21:58:10 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:58:41 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/", parameters={}
+2020-04-27 21:58:41 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 21:58:41 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@6f649ce9 href = 'http://localhost:9001/actuator']}}]
+2020-04-27 21:58:41 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:58:51 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/health}]
+2020-04-27 21:58:51 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health.", parameters={}
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:59:10 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/health.}]
+2020-04-27 21:59:10 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:59:13 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/health}]
+2020-04-27 21:59:13 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 21:59:19 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/info}]
+2020-04-27 21:59:19 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 21:59:43 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:59:43 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3291 ms
+2020-04-27 21:59:46 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 21:59:46 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 21:59:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 21:59:46 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:59:46 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:59:46 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 21:59:47 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 21:59:47 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 105 ms
+2020-04-27 21:59:47 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 21:59:47 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 21:59:47 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:00:38 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:00:38 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 27 22:00:38 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/info}]
+2020-04-27 22:00:38 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:01:28 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:01:28 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2678 ms
+2020-04-27 22:01:30 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:01:30 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:01:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:01:30 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:01:30 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:01:30 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:01:31 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:01:31 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 98 ms
+2020-04-27 22:01:31 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:01:31 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:01:31 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:01:32 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:01:32 [RMI TCP Connection(1)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:01:32 [RMI TCP Connection(1)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:01:32 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2020-04-27 22:01:42 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 22:01:42 [http-nio-8083-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:01:42 [http-nio-8083-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:01:42 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:01:42 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:01:42 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-27 22:01:43 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:01:43 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 27 22:01:42 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/info}]
+2020-04-27 22:01:43 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 27 22:01:54 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/health}]
+2020-04-27 22:01:54 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 27 22:01:56 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/health}]
+2020-04-27 22:01:56 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:02:03 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:02:03 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:02:03 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:02:03 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:02:03 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:02:03 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:02:03 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:02:03 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:02:28 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator", parameters={}
+2020-04-27 22:02:28 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:02:28 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@3cdb461c href = 'http://localhost:9001/actuator'], health=[Link@2b82d613 href = 'http://localhost:9001/actuator/health'], health-component=[Link@3cdaf752 href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@78b1b18c href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@1ebce320 href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:02:28 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:04:57 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:04:57 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3302 ms
+2020-04-27 22:05:00 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:05:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:05:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:05:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:05:00 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:05:00 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:05:00 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:05:00 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 99 ms
+2020-04-27 22:05:01 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:05:01 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:05:01 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:05:01 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:05:01 [RMI TCP Connection(4)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:05:01 [RMI TCP Connection(4)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:05:01 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2020-04-27 22:05:05 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:05:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:05:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:05:05 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-04-27 22:05:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator", parameters={}
+2020-04-27 22:05:05 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:05:05 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@5469680c href = 'http://localhost:9001/actuator'], health=[Link@4ffc9c61 href = 'http://localhost:9001/actuator/health'], health-component=[Link@549e97db href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@719f519d href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@6ea97eaa href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:05:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/info", parameters={}
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:05:17 VET 2020, status=404, error=Not Found, message=No message available, path=/info}]
+2020-04-27 22:05:17 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:05:25 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:05:25 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:05:25 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:05:25 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:05:25 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:07:07 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:07:07 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2739 ms
+2020-04-27 22:07:09 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:07:09 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:07:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:07:09 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:07:09 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:07:09 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:07:10 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:07:10 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 115 ms
+2020-04-27 22:07:10 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:07:10 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:07:10 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:07:10 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:07:10 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:07:10 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:07:10 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2020-04-27 22:07:16 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:07:16 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:07:16 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:07:16 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2020-04-27 22:07:16 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/", parameters={}
+2020-04-27 22:07:17 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:07:17 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@5f7b3ace href = 'http://localhost:9001/actuator'], health=[Link@5b32313 href = 'http://localhost:9001/actuator/health'], health-component=[Link@1df05844 href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@43bea893 href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@45155760 href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:07:17 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:07:29 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 22:07:29 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:07:29 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:07:29 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{}]
+2020-04-27 22:07:29 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:07:31 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 22:07:31 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:07:31 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:07:31 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{}]
+2020-04-27 22:07:31 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:07:41 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/", parameters={}
+2020-04-27 22:07:41 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:07:41 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@54f00232 href = 'http://localhost:9001/actuator'], health=[Link@5a37f6dc href = 'http://localhost:9001/actuator/health'], health-component=[Link@5e086942 href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@1b0afce7 href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@4f3f9c26 href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:07:41 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/beans", parameters={}
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:07:53 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/beans}]
+2020-04-27 22:07:53 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/bean", parameters={}
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:07:56 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/bean}]
+2020-04-27 22:07:56 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:07:59 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/", parameters={}
+2020-04-27 22:07:59 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:07:59 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@6f9da488 href = 'http://localhost:9001/actuator'], health=[Link@615a470b href = 'http://localhost:9001/actuator/health'], health-component=[Link@6565cff8 href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@20674d30 href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@22dc1450 href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:07:59 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:08:50 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:08:50 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2363 ms
+2020-04-27 22:08:52 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:08:52 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:08:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:08:52 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:08:52 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:08:52 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:08:53 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:08:53 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 108 ms
+2020-04-27 22:08:53 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:08:53 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:08:53 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:08:54 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:08:54 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:08:54 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:08:54 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2020-04-27 22:08:59 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:08:59 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:08:59 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:08:59 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-04-27 22:08:59 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/", parameters={}
+2020-04-27 22:08:59 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:08:59 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@2475cfae href = 'http://localhost:9001/actuator'], health=[Link@6fac7c1d href = 'http://localhost:9001/actuator/health'], health-component=[Link@40bc7150 href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@9a760ec href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@3a5d6c9 href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:08:59 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:09:06 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/info", parameters={}
+2020-04-27 22:09:06 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:09:06 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:09:06 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{}]
+2020-04-27 22:09:06 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:10:16 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:10:16 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:10:16 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:10:16 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:10:16 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:13:15 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:13:15 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2704 ms
+2020-04-27 22:13:17 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:13:17 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:13:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:13:17 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:13:17 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:13:17 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:13:18 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:13:18 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 98 ms
+2020-04-27 22:13:18 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:13:18 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:13:18 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:13:18 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:13:18 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:13:18 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:13:18 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-27 22:13:23 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:13:23 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/health", parameters={}
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:13:23 VET 2020, status=404, error=Not Found, message=No message available, path=/health}]
+2020-04-27 22:13:23 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:13:32 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:13:32 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:13:32 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:13:32 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:13:32 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:14:59 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:14:59 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2856 ms
+2020-04-27 22:15:01 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:15:01 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:15:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:15:01 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:15:01 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:15:01 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:15:02 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:15:02 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 130 ms
+2020-04-27 22:15:02 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:15:02 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:15:02 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:15:02 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:15:02 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:15:02 [RMI TCP Connection(2)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:15:02 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2020-04-27 22:15:05 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:15:05 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:15:05 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:15:07 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:15:07 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:15:07 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:15:07 [http-nio-9001-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:15:07 [http-nio-9001-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:15:58 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:15:58 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2428 ms
+2020-04-27 22:16:00 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-27 22:16:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:16:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-27 22:16:00 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:16:00 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:16:00 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-27 22:16:01 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-27 22:16:01 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 96 ms
+2020-04-27 22:16:01 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-27 22:16:01 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-27 22:16:01 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-27 22:16:01 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:16:01 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:16:01 [RMI TCP Connection(3)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:16:01 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-04-27 22:16:11 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-27 22:16:11 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:16:11 [http-nio-9001-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/metrics", parameters={}
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:18:38 VET 2020, status=404, error=Not Found, message=No message available, path=/actuator/metrics}]
+2020-04-27 22:18:38 [http-nio-9001-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:18:41 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/", parameters={}
+2020-04-27 22:18:41 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:18:41 [http-nio-9001-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{_links={self=[Link@53480d1b href = 'http://localhost:9001/actuator'], health=[Link@2b815519 href = 'http://localhost:9001/actuator/health'], health-component=[Link@33ad9a3b href = 'http://localhost:9001/actuator/health/{component}'], health-component-instance=[Link@42167a84 href = 'http://localhost:9001/actuator/health/{component}/{instance}'], info=[Link@51258708 href = 'http://localhost:9001/actuator/info']}}]
+2020-04-27 22:18:41 [http-nio-9001-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/metrics/", parameters={}
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:19:06 VET 2020, status=404, error=Not Found, message=No message available, path=/metrics/}]
+2020-04-27 22:19:06 [http-nio-9001-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/health", parameters={}
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.autoconfigure.web.servlet.ManagementErrorEndpoint.invoke(org.springframework.web.context.request.ServletWebRequest)
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{timestamp=Mon Apr 27 22:19:18 VET 2020, status=404, error=Not Found, message=No message available, path=/health}]
+2020-04-27 22:19:18 [http-nio-9001-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2020-04-27 22:19:26 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/actuator/health", parameters={}
+2020-04-27 22:19:26 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json" to []
+2020-04-27 22:19:26 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/vnd.spring-boot.actuator.v2+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v2+json, application/json]
+2020-04-27 22:19:26 [http-nio-9001-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [UP {}]
+2020-04-27 22:19:26 [http-nio-9001-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

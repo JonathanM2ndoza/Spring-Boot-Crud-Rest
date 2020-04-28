@@ -20,18 +20,17 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/users")
-    public ResponseEntity<List<User>> getAllUsers() {
-        List<User> userList = userService.getAllUsers();
-
+    public ResponseEntity<List<User>> getUsers() {
+        List<User> userList = userService.getUsers();
         HttpHeaders headers = new HttpHeaders();
         headers.add("Responded", "UserController");
         return ResponseEntity.ok().headers(headers).body(userList);
     }
 
     @GetMapping("/users/{id}")
-    public ResponseEntity<User> getUserById(
+    public ResponseEntity<User> getUser(
             @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
-        User user = userService.getUserById(userId);
+        User user = userService.getUser(userId);
         return ResponseEntity.ok().body(user);
     }
 
@@ -54,5 +53,12 @@ public class UserController {
             @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
         userService.deleteUser(userId);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/users/name/{firstName}")
+    public ResponseEntity<User> getUserByFirstName(
+            @PathVariable(value = "firstName") String firstName) throws ResourceNotFoundException {
+        User user = userService.getUserByFirstName(firstName);
+        return ResponseEntity.ok().body(user);
     }
 }
