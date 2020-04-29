@@ -80,6 +80,7 @@ DB MySQL
 
 ![Screenshot](/prtsc/RESTful-API-7.4.png)
 
+![Screenshot](/prtsc/RESTful-API-7.1.png)
 
 
 
