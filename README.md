@@ -66,7 +66,9 @@ Example of RESTful API with Spring Boot. Basic logging, JPA and MySQL.
 
 ![Screenshot](/prtsc/RESTful-API-8.png)
 
+### Get a person's vehicles
 
+![Screenshot](/prtsc/RESTful-API-9.png)
 
 
 
