@@ -14,77 +14,92 @@ import java.util.Date;
 @EntityListeners(AuditingEntityListener.class)
 public class User {
 
-    private long id;
-    private String firstName;
-    private String lastName;
-    private String emailId;
-    private Date createdAt;
-    private String createdBy;
-    private Date updatedAt;
-    private String updatedby;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id",nullable = false)
-    public long getId() { return id; }
-    public void setId(long id) { this.id = id; }
-
+    @Column(name = "id", nullable = false)
+    private long id;
     @Column(name = "first_name", nullable = false)
+    private String firstName;
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
+    @Column(name = "email_address", nullable = false)
+    private String emailId;
+    @Column(name = "created_at", nullable = false)
+    @CreatedDate
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdAt;
+    @Column(name = "created_by", nullable = false)
+    @CreatedBy
+    private String createdBy;
+    @Column(name = "updated_at", nullable = false)
+    @LastModifiedDate
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date updatedAt;
+    @Column(name = "updated_by", nullable = false)
+    @LastModifiedBy
+    private String updatedby;
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getFirstName() {
         return firstName;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    @Column(name = "last_name", nullable = false)
-    public String getLastName() { return lastName; }
+    public String getLastName() {
+        return lastName;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    @Column(name = "email_address", nullable = false)
     public String getEmailId() {
         return emailId;
     }
+
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 
-    @Column(name = "created_at", nullable = false)
-    @CreatedDate
-    @Temporal(TemporalType.TIMESTAMP)
     public Date getCreatedAt() {
         return createdAt;
     }
+
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
 
-    @Column(name = "created_by", nullable = false)
-    @CreatedBy
     public String getCreatedBy() {
         return createdBy;
     }
+
     public void setCreatedBy(String createdBy) {
         this.createdBy = createdBy;
     }
 
-    @Column(name = "updated_at", nullable = false)
-    @LastModifiedDate
-    @Temporal(TemporalType.TIMESTAMP)
     public Date getUpdatedAt() {
         return updatedAt;
     }
+
     public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
 
-    @Column(name = "updated_by", nullable = false)
-    @LastModifiedBy
     public String getUpdatedby() {
         return updatedby;
     }
+
     public void setUpdatedby(String updatedby) {
         this.updatedby = updatedby;
     }
