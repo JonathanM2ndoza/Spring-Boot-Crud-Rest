@@ -12,7 +12,7 @@ public class Vehicle {
     public long id;
     @Column(name = "name", nullable = false)
     private String name;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private User user;
 
     public long getId() {
