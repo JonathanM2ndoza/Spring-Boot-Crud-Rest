@@ -28,4 +28,10 @@ public class VehicleService {
         return vehicleRepository.save(vehicle);
     }
 
+    public void deleteVehicle(Long vehicleId) throws ResourceNotFoundException {
+        Vehicle vehicle = vehicleRepository.findById(vehicleId)
+                .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND + vehicleId));
+        vehicleRepository.delete(vehicle);
+    }
+
 }

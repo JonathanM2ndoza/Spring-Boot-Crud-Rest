@@ -39,4 +39,11 @@ public class VehicleController {
         Vehicle vehicleCreated = vehicleService.createVehicle(vehicle);
         return ResponseEntity.created(URI.create("/users/" + vehicleCreated.getId())).body(vehicleCreated);
     }
+
+    @DeleteMapping("/vehicles/{id}")
+    public ResponseEntity deleteVehicles(
+            @PathVariable(value = "id") Long vehicleId) throws ResourceNotFoundException {
+        vehicleService.deleteVehicle(vehicleId);
+        return ResponseEntity.noContent().build();
+    }
 }
