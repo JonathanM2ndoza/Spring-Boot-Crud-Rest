@@ -1,6 +1,6 @@
 # Spring-Boot-Crud-Rest
 
-Example of RESTful API with Spring Boot. Basic logging, JPA, MySQL  
+Example of RESTful API with Spring Boot. Basic logging, JPA and MySQL.  
 
 ## REST and RESTful
 
@@ -49,6 +49,23 @@ Example of RESTful API with Spring Boot. Basic logging, JPA, MySQL
 ### DB MySQL
 
 ![Screenshot](/prtsc/RESTful-API-6.2.png)
+
+### Create a new user and create vehicle
+
+![Screenshot](/prtsc/RESTful-API-7.png)
+
+![Screenshot](/prtsc/RESTful-API-7.1.png)
+
+![Screenshot](/prtsc/RESTful-API-7.2.png)
+
+![Screenshot](/prtsc/RESTful-API-7.3.png)
+
+![Screenshot](/prtsc/RESTful-API-7.4.png)
+
+### Get vehicles
+
+![Screenshot](/prtsc/RESTful-API-8.png)
+
 
 
 
