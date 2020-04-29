@@ -309,3 +309,64 @@
 2020-04-29 14:06:04 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2020-04-29 14:06:04 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Vehicle{id=4, name='Audi', user=null}, Vehicle{id=5, name='BMW', user=null}]]
 2020-04-29 14:06:04 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-29 14:39:55 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-29 14:39:55 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2708 ms
+2020-04-29 14:39:57 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-29 14:39:57 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-29 14:39:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-29 14:39:57 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2020-04-29 14:39:58 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-29 14:39:58 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-29 14:39:58 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-29 14:39:58 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 81 ms
+2020-04-29 14:39:58 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 1 mappings in 'requestMappingHandlerMapping'
+2020-04-29 14:39:58 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-29 14:39:58 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-29 14:39:58 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-29 14:39:58 [RMI TCP Connection(1)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2020-04-29 14:39:58 [RMI TCP Connection(1)-127.0.0.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-29 14:39:58 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-04-29 14:40:13 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles", parameters={}
+2020-04-29 14:40:13 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.Vehicle>> com.jmendoza.springbootcrudrest.controller.UserController.getVehiclesByUserId(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:40:13 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:40:13 [http-nio-8083-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Vehicle{id=4, name='Audi', user=null}, Vehicle{id=5, name='BMW', user=null}]]
+2020-04-29 14:40:13 [http-nio-8083-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-29 14:40:16 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles", parameters={}
+2020-04-29 14:40:16 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.Vehicle>> com.jmendoza.springbootcrudrest.controller.UserController.getVehiclesByUserId(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:40:16 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:40:16 [http-nio-8083-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Vehicle{id=4, name='Audi', user=null}, Vehicle{id=5, name='BMW', user=null}]]
+2020-04-29 14:40:16 [http-nio-8083-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-29 14:40:23 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles/5", parameters={}
+2020-04-29 14:40:23 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.Vehicle> com.jmendoza.springbootcrudrest.controller.UserController.getVehicleByUserIdAndVehicleId(java.lang.Long,java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:40:23 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:40:23 [http-nio-8083-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Vehicle{id=5, name='BMW', user=null}]
+2020-04-29 14:40:23 [http-nio-8083-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles/6", parameters={}
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.Vehicle> com.jmendoza.springbootcrudrest.controller.UserController.getVehicleByUserIdAndVehicleId(java.lang.Long,java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@b799fcb]
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: Vehicle not found ::  - User not found :: 16]
+2020-04-29 14:40:28 [http-nio-8083-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-29 14:40:34 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles/4", parameters={}
+2020-04-29 14:40:34 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.Vehicle> com.jmendoza.springbootcrudrest.controller.UserController.getVehicleByUserIdAndVehicleId(java.lang.Long,java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:40:34 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:40:34 [http-nio-8083-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Vehicle{id=4, name='Audi', user=null}]
+2020-04-29 14:40:34 [http-nio-8083-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles/6", parameters={}
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.Vehicle> com.jmendoza.springbootcrudrest.controller.UserController.getVehicleByUserIdAndVehicleId(java.lang.Long,java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler public org.springframework.http.ResponseEntity com.jmendoza.springbootcrudrest.exception.GlobalExceptionHandler.resourceNotFoundException(com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException,org.springframework.web.context.request.WebRequest)
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.jmendoza.springbootcrudrest.exception.ErrorDetails@11e0b883]
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException: Vehicle not found ::  - User not found :: 16]
+2020-04-29 14:40:39 [http-nio-8083-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2020-04-29 14:41:00 [http-nio-8083-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles/", parameters={}
+2020-04-29 14:41:00 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.jmendoza.springbootcrudrest.model.Vehicle>> com.jmendoza.springbootcrudrest.controller.UserController.getVehiclesByUserId(java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:41:00 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:41:00 [http-nio-8083-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Vehicle{id=4, name='Audi', user=null}, Vehicle{id=5, name='BMW', user=null}]]
+2020-04-29 14:41:00 [http-nio-8083-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2020-04-29 14:41:46 [http-nio-8083-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/v1/users/16/vehicles/5", parameters={}
+2020-04-29 14:41:46 [http-nio-8083-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public org.springframework.http.ResponseEntity<com.jmendoza.springbootcrudrest.model.Vehicle> com.jmendoza.springbootcrudrest.controller.UserController.getVehicleByUserIdAndVehicleId(java.lang.Long,java.lang.Long) throws com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException
+2020-04-29 14:41:46 [http-nio-8083-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-29 14:41:46 [http-nio-8083-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Vehicle{id=5, name='BMW', user=null}]
+2020-04-29 14:41:46 [http-nio-8083-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

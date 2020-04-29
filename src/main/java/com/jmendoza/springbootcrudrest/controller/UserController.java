@@ -60,6 +60,7 @@ public class UserController {
         return ResponseEntity.noContent().build();
     }
 
+    // This is just a test, don't use, break with REST API design.
     @GetMapping("/users/name/{firstName}")
     public ResponseEntity<User> getUserByFirstName(
             @PathVariable(value = "firstName") String firstName) throws ResourceNotFoundException {
@@ -68,9 +69,16 @@ public class UserController {
     }
 
     @GetMapping("/users/{id}/vehicles")
-    public ResponseEntity<List<Vehicle>> getUserVehicles(
+    public ResponseEntity<List<Vehicle>> getVehiclesByUserId(
             @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
-        List<Vehicle> vehicleList = vehicleService.getUserVehicles(userId);
+        List<Vehicle> vehicleList = vehicleService.getVehiclesByUserId(userId);
         return ResponseEntity.ok().body(vehicleList);
+    }
+
+    @GetMapping("/users/{userId}/vehicles/{vehicleId}")
+    public ResponseEntity<Vehicle> getVehicleByUserIdAndVehicleId(
+            @PathVariable(value = "userId") Long userId, @PathVariable(value = "vehicleId") Long vehicleId) throws ResourceNotFoundException {
+        Vehicle vehicle = vehicleService.getVehicleByUserIdAndVehicleId(userId, vehicleId);
+        return ResponseEntity.ok().body(vehicle);
     }
 }

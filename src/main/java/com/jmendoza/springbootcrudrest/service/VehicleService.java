@@ -36,7 +36,7 @@ public class VehicleService {
         vehicleRepository.delete(vehicle);
     }
 
-    public List<Vehicle> getUserVehicles(Long userId) throws ResourceNotFoundException {
+    public List<Vehicle> getVehiclesByUserId(Long userId) throws ResourceNotFoundException {
 
         Optional<List<Vehicle>> optionalVehicleList = vehicleRepository.findByUserId(userId);
         optionalVehicleList.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
@@ -45,5 +45,16 @@ public class VehicleService {
             vehicle.setUser(null);
             return vehicle;
         }).collect(Collectors.toList());
+    }
+
+    public Vehicle getVehicleByUserIdAndVehicleId(Long userId, Long vehicleId) throws ResourceNotFoundException {
+
+        Optional<Vehicle> optionalVehicle = vehicleRepository.findByUserIdAndId(userId, vehicleId);
+        optionalVehicle.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
+
+        Vehicle vehicle = optionalVehicle.get();
+        vehicle.setUser(null);
+
+        return vehicle;
     }
 }
