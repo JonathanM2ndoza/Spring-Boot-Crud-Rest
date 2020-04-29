@@ -105,4 +105,18 @@ public class User {
     public void setUpdatedby(String updatedby) {
         this.updatedby = updatedby;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emailId='" + emailId + '\'' +
+                ", createdAt=" + createdAt +
+                ", createdBy='" + createdBy + '\'' +
+                ", updatedAt=" + updatedAt +
+                ", updatedby='" + updatedby + '\'' +
+                '}';
+    }
 }

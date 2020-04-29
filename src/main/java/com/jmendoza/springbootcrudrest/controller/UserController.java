@@ -2,7 +2,9 @@ package com.jmendoza.springbootcrudrest.controller;
 
 import com.jmendoza.springbootcrudrest.exception.ResourceNotFoundException;
 import com.jmendoza.springbootcrudrest.model.User;
+import com.jmendoza.springbootcrudrest.model.Vehicle;
 import com.jmendoza.springbootcrudrest.service.UserService;
+import com.jmendoza.springbootcrudrest.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +20,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private VehicleService vehicleService;
 
     @GetMapping("/users")
     public ResponseEntity<List<User>> getUsers() {
@@ -60,5 +65,12 @@ public class UserController {
             @PathVariable(value = "firstName") String firstName) throws ResourceNotFoundException {
         User user = userService.getUserByFirstName(firstName);
         return ResponseEntity.ok().body(user);
+    }
+
+    @GetMapping("/users/{id}/vehicles")
+    public ResponseEntity<List<Vehicle>> getUserVehicles(
+            @PathVariable(value = "id") Long userId) throws ResourceNotFoundException {
+        List<Vehicle> vehicleList = vehicleService.getUserVehicles(userId);
+        return ResponseEntity.ok().body(vehicleList);
     }
 }

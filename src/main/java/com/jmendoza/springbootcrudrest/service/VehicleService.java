@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class VehicleService {
@@ -33,5 +34,18 @@ public class VehicleService {
                 .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND + vehicleId));
         vehicleRepository.delete(vehicle);
     }
+
+    public List<Vehicle> getUserVehicles(Long userId) throws ResourceNotFoundException {
+        final Optional<List<Vehicle>> optionalVehicleList = vehicleRepository.findByUserId(userId);
+        System.out.println(optionalVehicleList);
+        optionalVehicleList.ifPresent(vehicles -> vehicles.stream().map(v -> {
+            v.setUser(null);
+            System.out.println("Vehicles::::::::::" + v);
+            return  v;
+        }));
+        return optionalVehicleList
+                .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
+    }
+
 
 }

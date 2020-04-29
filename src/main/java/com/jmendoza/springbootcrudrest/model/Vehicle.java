@@ -1,9 +1,12 @@
 package com.jmendoza.springbootcrudrest.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "vehicle")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Vehicle {
 
     @Id
@@ -37,5 +40,14 @@ public class Vehicle {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", user=" + user +
+                '}';
     }
 }
