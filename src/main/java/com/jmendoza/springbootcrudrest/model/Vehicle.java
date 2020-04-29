@@ -9,17 +9,17 @@ public class Vehicle {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
-    public Integer id;
+    public long id;
     @Column(name = "name", nullable = false)
     private String name;
     @ManyToOne(cascade = CascadeType.ALL)
     private User user;
 
-    public Integer getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(long id) {
         this.id = id;
     }
 
