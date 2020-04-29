@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class VehicleService {
@@ -36,16 +37,13 @@ public class VehicleService {
     }
 
     public List<Vehicle> getUserVehicles(Long userId) throws ResourceNotFoundException {
-        final Optional<List<Vehicle>> optionalVehicleList = vehicleRepository.findByUserId(userId);
-        System.out.println(optionalVehicleList);
-        optionalVehicleList.ifPresent(vehicles -> vehicles.stream().map(v -> {
-            v.setUser(null);
-            System.out.println("Vehicles::::::::::" + v);
-            return  v;
-        }));
-        return optionalVehicleList
-                .orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
+
+        Optional<List<Vehicle>> optionalVehicleList = vehicleRepository.findByUserId(userId);
+        optionalVehicleList.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
+
+        return optionalVehicleList.get().stream().map(vehicle -> {
+            vehicle.setUser(null);
+            return vehicle;
+        }).collect(Collectors.toList());
     }
-
-
 }
