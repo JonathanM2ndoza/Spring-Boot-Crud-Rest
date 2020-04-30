@@ -39,22 +39,26 @@ public class VehicleService {
     public List<Vehicle> getVehiclesByUserId(Long userId) throws ResourceNotFoundException {
 
         Optional<List<Vehicle>> optionalVehicleList = vehicleRepository.findByUserId(userId);
-        optionalVehicleList.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
+        List<Vehicle> vehicleList = optionalVehicleList.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
 
-        return optionalVehicleList.get().stream().map(vehicle -> {
-            vehicle.setUser(null);
-            return vehicle;
-        }).collect(Collectors.toList());
+        if (optionalVehicleList.isPresent()) {
+            vehicleList = optionalVehicleList.get().stream().map(vehicle -> {
+                vehicle.setUser(null);
+                return vehicle;
+            }).collect(Collectors.toList());
+        }
+        return vehicleList;
     }
 
     public Vehicle getVehicleByUserIdAndVehicleId(Long userId, Long vehicleId) throws ResourceNotFoundException {
 
         Optional<Vehicle> optionalVehicle = vehicleRepository.findByUserIdAndId(userId, vehicleId);
-        optionalVehicle.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
+        Vehicle vehicle = optionalVehicle.orElseThrow(() -> new ResourceNotFoundException(UserConstanst.VEHICLE_NOT_FOUND.concat(" - ").concat(UserConstanst.USER_NOT_FOUND) + userId));
 
-        Vehicle vehicle = optionalVehicle.get();
-        vehicle.setUser(null);
-
+        if (optionalVehicle.isPresent()) {
+            vehicle = optionalVehicle.get();
+            vehicle.setUser(null);
+        }
         return vehicle;
     }
 }
