@@ -8,6 +8,23 @@ Example of RESTful API with Spring Boot. Basic logging, JPA and MySQL.
 
 - RESTful is typically used to refer to web services implementing such an architecture.
 
+### Start a mysql server instance with Docker Hub
+
+jmendoza@jmendoza-ThinkPad-T420:~$ docker run -d --name mysql -e MYSQL_ROOT_PASSWORD=root.jmtizure.k201 mysql
+
+![Screenshot](/prtsc/RESTful-API-11.png)
+
+### Check the ip of your container and update the application.properties file
+
+jmendoza@jmendoza-ThinkPad-T420:~$ docker inspect mysql
+
+![Screenshot](/prtsc/RESTful-API-11.1.png)
+
+![Screenshot](/prtsc/RESTful-API-11.2.png)
+
+![Screenshot](/prtsc/RESTful-API-11.3.png)
+
+
 ### Running Spring Boot with IntelliJ
 
 ![Screenshot](/prtsc/RESTful-API-1.png)
